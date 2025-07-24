@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>log in</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="overlay"></div>
+    <div class="container">
+        <div class="form-box">
+            <form action="../index.html" method="get" name="Formfile" onsubmit="return validation_login()">
+                <h2>Login</h2>
+                <p id="result"></p>               
+                <div class="input-box">
+                    <i class="ri-mail-fill"></i>
+                    <input type="text" name="Email" placeholder="Email">
+                </div>
+                <div class="input-box">
+                    <i class="ri-git-repository-private-fill"></i>
+                    <input type="password" name="Password" placeholder="Password">
+                </div>
+                <div class="button">
+                    <input type="submit" value="Login" class="btn">
+                </div>
+                <div class="group">
+                    <span><a href="#">Forget-Password</a></span>
+                    <span><a href="./regestration.html">Registration</a></span>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

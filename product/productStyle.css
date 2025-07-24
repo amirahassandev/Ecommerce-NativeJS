@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+:root{
+    --primary-color: #ff8c25;
+    --secondary-color: #795548ec;
+    --background-color: #A1887F;
+}
+::selection{
+    color: var(--secondary-color);
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+p{
+    color: white;
+    margin: 0;
+}
+img{
+    border-radius: 10px;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 16vh;
+}
+header{
+    border-radius: 10px;
+}
+header .content{
+    display: flex;
+    flex-direction: column;
+    box-shadow: 1px 6px 18px 0px;
+    width: 100%;
+    background-color: var(--background-color);
+}
+header .left{
+    display: flex;
+    flex-direction: column;
+    padding: 20px 17px;
+    gap: 20px;
+}
+header .left .mainImg{
+    display: flex;
+    transition: all .5s ease-in-out;
+}
+header .left .mainImg:hover{
+    scale: -1;
+}
+header .left .mainImg img{
+    max-width: 85%;
+    margin-right: auto;
+    margin-left: auto;
+    max-height: 40vh;
+}
+header .left .subimg{
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+header .left .subimg img{
+    background-size: cover;
+    border-radius: 10px;
+    cursor: pointer;
+    height: 60px;
+    transition: all .2s ease-in-out;
+}
+header .left .subimg img:hover{
+    transform: scaleY(1.2);
+}
+header .right{
+    display: flex;
+    flex-direction: column;
+    padding: 10px 15px 13px 15px;
+    gap: 15px;
+}
+header .right .priceItem{
+
+}
+header .right .priceItem span.price{
+    color: red;
+}
+header .right .infoItem{
+    color: #ffffffb5;
+}
+header .right .colors{
+
+}
+header .right .colors p:first-child{
+    font-weight: 900;
+}
+header .right .colors .palette{
+    width: 70%;
+    height: 16px;
+    margin: 15px 0;
+    display: flex;
+    gap: 15px;
+}
+header .right .colors .palette span{
+    height: 20px;
+    display: block;
+    width: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+header .right .colors .palette span:nth-child(1){
+    background-color: #0000ffe3;
+}
+header .right .colors .palette span:nth-child(2){
+    background-color: white;
+}
+header .right .colors .palette span:nth-child(3){
+    background-color: #ffff00d9;
+}
+header .right .colors .palette span:nth-child(4){
+    background-color: brown;
+}
+header .right .colors .palette span:nth-child(5){
+    background-color: black;
+}
+header .right .colors .palette span:nth-child(6){
+    background-color: red;
+}
+.btn{
+    background-color: white;
+    border: none;
+    color: black;
+    font-weight: 600;
+    font-family: fantasy;
+    width: 100%;
+    height: 32px;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 17px;
+    transition: all .4s ease-in-out;
+}
+.btn:hover{
+    background-color: var(--secondary-color);
+    color: white;
+}
+
+
+/* **************** MAIN ******************** */
+main{
+    box-shadow: 1px 6px 18px 0px;
+    background-color: #A1887F;
+    border-radius: 10px;
+}
+main .products{
+    display: flex;
+    gap: 2em;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+main .products .item{
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+}
+main .products .item .itemImg img{
+    width: 100%;
+    transition: all .5s ease-in-out;
+    max-height: 35vh;
+}
+main .products .item .itemImg img:hover{
+    scale: -1;
+}
+main .products .item .itemContents{
+    font-size: 15px;
+    text-align: center;
+}
+main .products .item .itemContents p:first-child{
+    margin-top: 10px;
+    font-weight: 400;
+}
+main .products .item .itemContents p:last-child{
+    margin: 10px;
+    font-weight: bold;
+}
+
+
+
+   /*  ************* RESPONSIVE *************** */
+@media screen and (min-width: 768px){
+
+}
+@media screen and (min-width: 795px){
+    header .content{
+        flex-direction: row;
+        justify-content: center;
+        gap: 0;
+    }
+    header .left .subimg img{
+        margin-left: 0;
+    }
+    header .right{
+        width: 40%;
+        gap: 22px;
+        justify-content: center;
+    }
+    header .left .mainImg img{
+        max-height: 70vh;
+    }
+}
