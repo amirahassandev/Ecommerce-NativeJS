@@ -66,17 +66,28 @@ Users can view, update quantities, and remove products from the cart. Note: Data
 ## Project Structure
 
 /e-commerce-native-js
+
 │
-├── /assets               # Images, icons, etc.
-├── /css                  # Styles for the website
-│   └── style.css         # Main CSS file
-├── /js                   # JavaScript files
-│   ├── app.js            # Main logic
-│   ├── cart.js           # Cart management logic
-│   ├── auth.js           # User authentication logic (Registration/Login)
-│   └── utils.js          # Utility functions (handling sessions)
-├── index.html            # The main HTML page (Homepage)
-└── README.md             # Project documentation (this file)
+├── /assets                Images, icons, etc.
+
+├── /css                   Styles for the website
+
+│   └── style.css          Main CSS file
+
+├── /js                    JavaScript files
+
+│   ├── app.js             Main logic
+
+│   ├── cart.js            Cart management logic
+
+│   ├── auth.js            User authentication logic (Registration/Login)
+
+│   └── utils.js           Utility functions (handling sessions)
+
+├── index.html             The main HTML page (Homepage)
+
+└── README.md              Project documentation (this file)
+
 
 
 
