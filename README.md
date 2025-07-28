@@ -56,7 +56,7 @@
 
  - Add Products to Cart:
 
-  - Click "Add to Cart" to add products to your shopping cart. You can view the cart at any time by clicking on the cart icon.
+   - Click "Add to Cart" to add products to your shopping cart. You can view the cart at any time by clicking on the cart icon.
 
  - Manage Cart:
 
